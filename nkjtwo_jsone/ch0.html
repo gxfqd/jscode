@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+	</body>
+	<script  type="text/javascript">
+		//输出js的变量和类型
+		var  a1=10;
+		//document浏览器的文档内置对象
+		////typeof关键字 
+		document.write("---------数值类型----------<p>");
+		document.write(a1+",类型为:"+typeof a1+"<p>");
+		document.write("---------数值类型----------<p>");
+	
+		var a2="10";
+		document.write("---------字符串类型----------<p>");
+		document.write(a2+",类型为:"+typeof a2+"<p>");
+		document.write("---------字符串类型----------<p>");
+		
+		
+		var  a3='10';
+		document.write("---------字符串类型----------<p>");
+		document.write(a3+",类型为:"+typeof a3+"<p>");
+		document.write("---------字符串类型----------<p>");
+		
+		//undefined 未定义类型
+		var  a4;
+		document.write("---------类型----------<p>");
+		console.log(a4+",类型为:"+typeof a4);
+		document.write("---------类型----------");
+       
+//     let  a5;
+//     console.log(a5+","+typeof  a5);
+
+        var  a6=true;
+        document.write("---------类型----------<p>");
+		document.write(a6+",类型为:"+typeof a6);
+	    document.write("---------类型----------<p>");
+
+         //对象类型  obejct
+         var  a7=new Object();
+         document.write("---------类型----------<p>");
+		document.write(a7+",类型为:"+typeof a7);
+		 document.write("---------类型----------<p>");
+	    
+	    var  a8={"name":"李欣"}
+	     document.write("---------类型----------<p>");
+		document.write(a8+",类型为:"+typeof a8);
+		 document.write("---------类型----------<p>");
+	    
+	     var  a9=["1","2"]
+	     document.write("---------类型----------<p>");
+		document.write(a9+",类型为:"+typeof a9);
+		 document.write("---------类型----------<p>");
+         
+        //js可以把一个函数指向一个变量
+        var  a10 =function(){alert("梅子真好吃");}
+        document.write("---------类型----------<p>");
+		document.write(a10+",类型为:"+typeof a10);
+		 document.write("---------类型----------<p>");
+         
+        
+         
+         //函数类型
+         var  a11 = new Function("b1","b2","alert(b1+b2)");
+         var c=a11(10,20);
+         
+        // document.write(c);
+         document.write("---------类型----------<p>");
+		document.write(a11+",类型为--->:"+typeof a11);
+		 
+  
+		//js的数据类型
+		//1.number 数值类型
+		//2.string  字符串类型  ‘’和""均表示字符串 同python
+		//3.boolean  布尔类型 
+		//4.undefined   未定义类型
+		//5.object  对象类型 [] {}  new 对象
+		//6.function  函数类型  一个函数可以赋值给一个变量
+		
+		
+		
+		
+		
+	</script>
+</html>
