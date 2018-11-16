@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script  type="text/javascript">
+		//比较运算符   ===
+		
+		var a=10;
+		
+		var a1="10";
+		
+		//比较的是值
+		document.write(a==a1);
+		
+		document.write("<br>");
+		
+		//=== 值和类型均相等
+		document.write(a===a1);
+		
+		function Stu(num)
+		{
+			this.num=num;
+		}
+		
+		var  s1=new Stu(10);
+		var  s2  =new Stu(10);
+		document.write(s1==s2);
+		document.write(s1.num==s2.num);
+		
+	</script>
+</html>

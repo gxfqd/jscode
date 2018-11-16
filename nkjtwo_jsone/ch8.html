@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script  type="text/javascript">
+		
+		//运算符  instanceof 
+		//判断这个对象是不是这个类型
+		var a1=10;
+		
+		document.write(a1  instanceof Function);
+		
+		var a2=function(){};
+		
+		
+		
+		document.write(a2  instanceof Function);
+		
+		
+		function  Stu()
+		{
+			
+		}
+		var stu = new Object();
+		var s1= new Stu();
+		
+		document.write(stu instanceof  Stu);
+		document.write(s1 instanceof  Stu);
+		document.write(s1 instanceof  Object);
+	</script>
+</html>
