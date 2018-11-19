@@ -1,0 +1,17 @@
+DOM : Document   Object  model
+
+js针对于html,xml的文档document编程
+获取html元素
+
+   1.1 document.getElementById("id的属性值"); id="" 单个元素
+   1.2 document.getElementsByName("name的属性值"); name="" 数组
+   1.3 document.getElementsByTagName("标签名称");html标签名  数组 
+   1.4 document.getElementsByClassName("样式名称"):class=""  数组 
+   1.5 document.documentElement 获取html
+   1.6  document.body   获取body
+   1.7 document.querySelector("元素")
+   1.8 document.querySelectorAll("所有元素")
+
+
+
+创建html元素
