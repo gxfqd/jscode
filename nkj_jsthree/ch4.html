@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>王安乐</li>
+			<li>路廷伟</li>
+			<li>王启明</li>
+			<li>孙婕</li>
+		</ul>
+	</body>
+	
+	<script  type="text/javascript">
+		
+		var  liObjs=document.getElementsByTagName("li");
+		
+		for(var i=0;i<liObjs.length;i++)
+		{
+			//获取所有的值
+			//alert(liObjs[i].innerText);
+			
+			//获取点击的值
+			liObjs[i].onclick=function()
+			{
+				alert(this.innerText);
+			}
+		}
+		
+	</script>
+	
+</html>

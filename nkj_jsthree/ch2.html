@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 100px;
+				border: 1px  solid  royalblue;
+			}
+			/**css3的选择器**/
+			/**div:nth-child(odd){
+				background: red;
+			}
+			div:nth-child(even){
+				background: blue;
+			}**/
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		//获取所有的html标签getElementsByTagName
+		var divObjs=document.getElementsByTagName("div");
+		
+		console.log(typeof divObjs);
+	
+//		????有问题
+//		 divObjs.forEach(function(index,value){
+//		 	
+//		 	console.log(index,value);
+//		 });
+		 
+		
+//		for(var  i=0;i<divObjs.length;i++)
+//		{
+//			console.log(divObjs[i]);
+//		}
+		
+		
+	 /** for(var index in divObjs)
+	   {
+	   	  //判断是不是数字,true：不是数字
+	   	  if(isNaN(index))
+	   	  {
+	   	  		
+	   	  }
+	   	  else
+	   	  {
+	   	  	//是数字
+	   	  	  console.log(divObjs[index]);
+	   	  	  
+	   	  	  if(index%2==0)
+	   	  	  {
+	   	  	  	divObjs[index].style.backgroundColor="red";
+	   	  	  }
+	   	  	  else{
+	   	  	  	divObjs[index].style.backgroundColor="blue";
+	   	  	  }
+	   	  }
+	   }**/
+		
+		
+	</script>
+</html>

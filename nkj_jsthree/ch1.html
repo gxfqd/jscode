@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="checkbox" name="like" value="体育"  />体育<br>
+		<input type="checkbox" name="like" value="美术" />美术<br>
+		<input type="checkbox" name="like" value="音乐" />音乐<br>
+		<input type="checkbox" name="like" value="游戏" />游戏<br>
+		<input type="checkbox" name="like" value="足球" />足球<br>
+		<input type="checkbox" name="like" value="篮球" />篮球<br>
+		<p>
+			<input type="button" id="ckbtn" value="全选" />
+			<input type="button" id="revsebtn" value="反选" />
+	</body>
+	<script type="text/javascript">
+		var btnObj = document.getElementById("ckbtn");
+		var revseObj = document.getElementById("revsebtn");
+		//获取所有的标签的name属性值
+		var ckObjs = document.getElementsByName("like");
+		console.log(ckObjs);
+		btnObj.onclick = aa;
+		revseObj.onclick=bb;
+		//?选中的值怎么传递个服务器端java
+		function bb()
+		{
+			for(var i = 0; i < ckObjs.length; i++) {
+				
+				if(ckObjs[i].checked==true)
+				{
+					ckObjs[i].checked=false;
+				}
+				else{
+					ckObjs[i].checked=true;
+				}
+			}
+		}
+
+		function aa() {
+		
+
+			for(var i = 0; i < ckObjs.length; i++) {
+
+
+                ckObjs[i].checked=true;
+			}
+		}
+	</script>
+
+</html>

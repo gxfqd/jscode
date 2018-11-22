@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+	</body>
+	<script type="text/javascript">
+		
+		//javascript数组 动态数组
+		//js的数组，数据结构特点:不定长，类型不一致
+		
+		//js定义数组也有两种形式:
+		//1.创建数组直接分配数据
+		var  as=[1,"2",true,10,30];
+		document.write(as.length);
+		as[5]=100;
+		document.write(as.length);
+		document.write(as[1]);
+		as[9]=200
+		document.write(as[8]);
+		
+		document.write("<p>-------------------------");
+		
+		//2.创建数组 new Array();
+		var  a1 = new Array(10,"20");
+		document.write(a1.length);
+		document.write(a1[0]);
+		
+		a1[3]=40;
+		document.write(a1.length);
+		document.write(a1[2]);
+	    document.write("<p>-------------------------");
+	    
+	    //3.遍历数组 
+	    //传统遍历
+	    for(var  i=0;i<as.length;i++)
+	    {
+	    	document.write(as[i]+"<br>");
+	    }
+		document.write("<p>-------------------------");
+		//for  in 遍历
+		for(var i in as)
+		{
+			document.write(as[i]+"<br>");
+		}
+		document.write("<p>-------------------------");
+	
+	    var  objs=[{"a":10},{"a":20},{"a":30}]
+	    //forEach遍历
+	    objs.forEach(function(value,index,data){
+	    	
+	   	document.write(value["a"]+","+index+"<br>");
+	    	
+	    	
+	    	
+	    })
+	    
+	    
+	    
+	</script>
+</html>
